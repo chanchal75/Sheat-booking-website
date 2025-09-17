@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpaceIQ‑style Workspace Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Workspace Booking</h1>
+  </header>
+
+  <section class="user-info">
+    <label>Name:</label>
+    <input type="text" id="userName" placeholder="Your Name">
+
+    <label>Team:</label>
+    <input type="text" id="userTeam" placeholder="Your Team">
+
+    <label>Booking Date:</label>
+    <input type="date" id="bookingDate">
+  </section>
+
+  <section class="floor-plan">
+    <h2>Choose Your Desk</h2>
+    <div id="desksGrid"></div>
+  </section>
+
+  <section class="booking-details">
+    <p>Selected Desk(s): <span id="selectedDesks">None</span></p>
+    <button id="bookBtn">Book</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
